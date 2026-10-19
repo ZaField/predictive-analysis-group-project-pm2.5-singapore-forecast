@@ -1,0 +1,10 @@
+check,passed
+1. all supplied files load,True
+2. PM2.5 selected through the parameter column,True
+3. timezones consistent (UTC == local string; all series on Asia/Singapore),True
+4. outages and missing values documented,True
+5. wind availability shifted by +1 h,True
+6. daily weather lagged (feature on day D = summary of D-1),True
+7. targets are observed values (no fills) for every horizon,True
+"8. enough usable samples per split (>= 300 train, >= 100 val, >= 100 test)",True
+9. no future information in features (leakage test),True

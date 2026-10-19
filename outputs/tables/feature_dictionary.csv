@@ -1,0 +1,25 @@
+feature,group,definition (available at forecast time),rationale,first used in
+pm_now,PM2.5 history,Latest available PM2.5 at the origin,Strongest single predictor; also the persistence baseline,FS1
+pm_lag1,PM2.5 history,PM2.5 observed 1 h before the origin (after the 6 h forward-fill),Short-term persistence and decay of recent levels,FS1
+pm_lag2,PM2.5 history,PM2.5 observed 2 h before the origin (after the 6 h forward-fill),Short-term persistence and decay of recent levels,FS1
+pm_lag3,PM2.5 history,PM2.5 observed 3 h before the origin (after the 6 h forward-fill),Short-term persistence and decay of recent levels,FS1
+pm_lag6,PM2.5 history,PM2.5 observed 6 h before the origin (after the 6 h forward-fill),Short-term persistence and decay of recent levels,FS1
+pm_lag12,PM2.5 history,PM2.5 observed 12 h before the origin (after the 6 h forward-fill),Short-term persistence and decay of recent levels,FS1
+pm_lag24,PM2.5 history,PM2.5 observed 24 h before the origin (after the 6 h forward-fill),Short-term persistence and decay of recent levels,FS1
+pm_mean3,PM2.5 history,Trailing mean of the last 3 h,"Smooths sensor noise, captures the recent level",FS1
+pm_std3,PM2.5 history,Trailing standard deviation of the last 3 h,"Recent volatility, a spike-risk signal",FS1
+pm_mean6,PM2.5 history,Trailing mean of the last 6 h,"Smooths sensor noise, captures the recent level",FS1
+pm_std6,PM2.5 history,Trailing standard deviation of the last 6 h,"Recent volatility, a spike-risk signal",FS1
+pm_mean12,PM2.5 history,Trailing mean of the last 12 h,"Smooths sensor noise, captures the recent level",FS1
+pm_std12,PM2.5 history,Trailing standard deviation of the last 12 h,"Recent volatility, a spike-risk signal",FS1
+pm_mean24,PM2.5 history,Trailing mean of the last 24 h,"Smooths sensor noise, captures the recent level",FS1
+pm_std24,PM2.5 history,Trailing standard deviation of the last 24 h,"Recent volatility, a spike-risk signal",FS1
+hour,Time,Hour of day (0 to 23),Daily cycle seen in Figure E1,FS1
+dow,Time,Day of week (0 = Monday),"Weekly activity pattern (traffic, industry)",FS1
+hour_sin / hour_cos,Time,sin and cos of 2*pi*hour/24,Lets linear models treat 23:00 and 00:00 as neighbours,FS1
+dow_sin / dow_cos,Time,sin and cos of 2*pi*weekday/7,"Same, for weekdays",FS1
+wind_sin / wind_cos,Wind direction,sin and cos of the last completed hour's wind direction (available from H+1 h),Transport direction; circular variable encoded without a wrap-around jump,FS2
+wx_rain_d1,Lagged daily weather,Rainfall total of the previous day (S108),Washout of particles; only yesterday's value is known today,FS3
+wx_rain_sum3d,Lagged daily weather,Rainfall total over the 3 completed days before today,Longer wet / dry spell,FS3
+wx_wind_mean_d1,Lagged daily weather,Mean wind speed of the previous day,Ventilation of the area,FS3
+wx_wind_max_d1,Lagged daily weather,Maximum wind speed of the previous day,Ventilation of the area,FS3

@@ -1,0 +1,53 @@
+{
+  "1h/ElasticNet": {
+    "mode": "delta",
+    "params": {
+      "alpha": 10.0,
+      "l1_ratio": 0.5
+    },
+    "cv_MAE": 4.669089330331956
+  },
+  "3h/ElasticNet": {
+    "mode": "delta",
+    "params": {
+      "alpha": 10.0,
+      "l1_ratio": 0.9
+    },
+    "cv_MAE": 7.350158144218973
+  },
+  "6h/ElasticNet": {
+    "mode": "delta",
+    "params": {
+      "alpha": 0.1,
+      "l1_ratio": 0.1
+    },
+    "cv_MAE": 8.475304897061614
+  },
+  "1h/HistGB": {
+    "mode": "level",
+    "params": {
+      "learning_rate": 0.03,
+      "max_depth": 4,
+      "min_samples_leaf": 50
+    },
+    "cv_MAE": 5.737707013088233
+  },
+  "3h/HistGB": {
+    "mode": "delta",
+    "params": {
+      "learning_rate": 0.03,
+      "max_depth": 3,
+      "min_samples_leaf": 20
+    },
+    "cv_MAE": 8.749207834306537
+  },
+  "6h/HistGB": {
+    "mode": "delta",
+    "params": {
+      "learning_rate": 0.03,
+      "max_depth": 3,
+      "min_samples_leaf": 20
+    },
+    "cv_MAE": 9.346605625730048
+  }
+}

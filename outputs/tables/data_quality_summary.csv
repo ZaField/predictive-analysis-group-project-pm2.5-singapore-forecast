@@ -1,0 +1,31 @@
+metric,value
+pm25_records,2958
+null_values,0
+non_numeric_values,0
+exact_zero_values,24
+negative_values,0
+duplicate_timestamps_exact,0
+duplicate_hours,0
+timestamps_not_on_the_hour,0
+first_record_sgt,2026-04-09 19:00:00+08:00
+last_record_sgt,2026-08-31 08:00:00+08:00
+hours_in_span,3446
+hours_with_a_record,2958
+hours_without_any_record,488
+pct_hours_without_any_record,14.16
+number_of_missing_runs,10
+longest_missing_run_hours,407
+readings_above_55,40
+readings_above_150,4
+stat_count,2958.0
+stat_mean,21.355
+stat_std,16.892
+stat_min,0.0
+stat_1%,0.1
+stat_5%,1.4
+stat_25%,8.0
+stat_50%,20.55
+stat_75%,31.375
+stat_95%,43.5
+stat_99%,63.229
+stat_max,292.6

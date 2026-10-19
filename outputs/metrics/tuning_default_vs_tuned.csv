@@ -1,0 +1,7 @@
+horizon_h,model,mode,search_space,best_params,default_cv_MAE,tuned_cv_MAE,improvement_%,tuned_cv_MAE_std_over_folds,persistence_cv_MAE
+1,ElasticNet,delta,"{'alpha': [0.01, 0.1, 1.0, 10.0], 'l1_ratio': [0.1, 0.5, 0.9]}","{'alpha': 10.0, 'l1_ratio': 0.5}",5.417695028708019,4.669089330331956,13.817789565659366,1.5897552353313438,4.768467025174849
+3,ElasticNet,delta,"{'alpha': [0.01, 0.1, 1.0, 10.0], 'l1_ratio': [0.1, 0.5, 0.9]}","{'alpha': 10.0, 'l1_ratio': 0.9}",7.521684671522133,7.350158144218973,2.28042698934956,1.9940606864688835,7.724682203389831
+6,ElasticNet,delta,"{'alpha': [0.01, 0.1, 1.0, 10.0], 'l1_ratio': [0.1, 0.5, 0.9]}","{'alpha': 0.1, 'l1_ratio': 0.1}",8.49392900022225,8.475304897061614,0.2192637018763488,1.5628083554373846,9.294033296414232
+1,HistGB,level,"{'learning_rate': [0.03, 0.05, 0.1], 'max_depth': [3, 4, 6], 'min_samples_leaf': [20, 50]}","{'learning_rate': 0.03, 'max_depth': 4, 'min_samples_leaf': 50}",6.54535766475262,5.737707013088233,12.339289814728737,1.9013851870437253,4.768467025174849
+3,HistGB,delta,"{'learning_rate': [0.03, 0.05, 0.1], 'max_depth': [3, 4, 6], 'min_samples_leaf': [20, 50]}","{'learning_rate': 0.03, 'max_depth': 3, 'min_samples_leaf': 20}",9.297005207658856,8.749207834306537,5.8921917447248955,2.737573540880394,7.724682203389831
+6,HistGB,delta,"{'learning_rate': [0.03, 0.05, 0.1], 'max_depth': [3, 4, 6], 'min_samples_leaf': [20, 50]}","{'learning_rate': 0.03, 'max_depth': 3, 'min_samples_leaf': 20}",9.826932440924669,9.346605625730048,4.887861172162744,2.604129315105722,9.294033296414232

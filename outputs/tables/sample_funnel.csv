@@ -1,0 +1,4 @@
+horizon_h,hourly_origins,target_observed,+ complete PM history,+ at most 6 filled hours in last 24,+ seasonal naive available (usable)
+1,3446,2933,2810,2810,2810
+3,3446,2931,2800,2800,2800
+6,3446,2928,2785,2785,2785
